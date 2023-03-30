@@ -1,0 +1,42 @@
+.card{
+    position: relative;
+    padding: 0;
+    margin: 5px;
+    // background-color: rgb(204, 107, 107);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    transition: all 1s ease;
+    transform: scale(1);
+    &:hover{
+        transform: scale(1.1);
+        .img-container{
+            opacity: 0.09;
+        }
+        .info-container{
+            opacity: 1;
+        }
+    }
+    .img-container{
+        img{
+            margin: 0;
+            border-radius: 5px;
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+        }
+        
+    }
+
+    .info-container{
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        @include verticalAlign;
+        flex-direction: column;
+        font-size: 14px;
+        font-weight: 600;
+        opacity: 0;
+    }
+}
