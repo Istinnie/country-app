@@ -8,7 +8,7 @@ const HomePage = () => {
     let [countries, setCountries]=useState([]);
     let [searchInput, setSearchInput]=useState("");
     let [rangeInput, setRangeInput]=useState(12);
-    const rangeValue = useRef();
+    // const rangeValue = useRef();
     
     // get les countries ici
     // https://restcountries.com/v3.1/all
